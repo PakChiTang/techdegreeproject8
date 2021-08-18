@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Base Element Styles - "Mobile Media Query"*/
+  
+  body {
+    background-color: #fcfdfc;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #666668;
+    letter-spacing: 1px;
+    width: 100%;
+    position: relative;
+  }
+  
+  h1 {
+    display: flex;
+    font-size: 14px;
+    padding: 20px 0 15px 32px;
+    font-weight: 500;
+    color: #4d4e4e;
+    text-transform: uppercase;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(100, 100, 100, 0.4);
+  }
+  
+  .modal {
+    width: 375px;
+    margin: 15% auto auto;
+    position: relative;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 30px 20px;
+  }
+  
+  .modal-content .avatar {
+    height: 140px;
+    width: 140px;
+  }
+  
+  .modal-close {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+  
+  hr {
+    margin: 25px;
+  }
+  
+  .modal .text-container p {
+    color: #b4b7bb;
+  }
+  
+  .address {
+    padding-bottom: 7px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Grid Container */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    grid-template-rows: auto;
+    padding: 10px 15px 45px;
+  }
+  
+  .card {
+    display: flex;
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+    background: white;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 15px;
+    width: 100%;
+    height: 150px;
+  }
+  
+  .card:hover {
+    border: 2px solid #5b84b9;
+  }
+  
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+    margin-left: 15px;
+  }
+  
+  .email,
+  .address {
+    color: #b4b8bb;
+    padding-top: 7px;
+  }
+  
+  /* Employee Cards*/
+  
+  .avatar {
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+  }
